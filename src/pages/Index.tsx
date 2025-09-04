@@ -288,8 +288,8 @@ const Index = () => {
                 ></iframe>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">creé una app de IA que genera contenido infinito gratis</h3>
-                <p className="text-gray-300">y encima de todo autopostea en todas tus redes sociales.</p>
+                <h3 className="text-xl font-bold mb-2">Creé una app de IA que genera contenido infinito gratis</h3>
+                <p className="text-gray-300">Y encima de todo autopostea en todas tus redes sociales.</p>
               </div>
             </div>
             
