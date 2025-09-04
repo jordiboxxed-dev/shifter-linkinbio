@@ -123,6 +123,13 @@ const Index = () => {
     }
   ];
 
+  const galleryImages = [
+    "/gallery-1.jpg",
+    "/gallery-2.jpg",
+    "/gallery-3.jpg",
+    "/gallery-4.jpg",
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white overflow-hidden relative">
       {/* Animated background elements */}
@@ -187,14 +194,14 @@ const Index = () => {
           <h2 className="text-3xl font-bold text-center mb-12 gradient-text">Comunidad Gratuita</h2>
           
           <div className="flex justify-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl">
+            <div className="flex flex-wrap justify-center gap-6 max-w-4xl">
               {communityLinks.map((link) => {
                 const Icon = link.icon;
                 return (
                   <a 
                     key={link.id}
                     href={link.href}
-                    className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20"
+                    className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20 w-full max-w-sm"
                   >
                     <div className="flex flex-col items-center text-center space-y-4">
                       <div className="glass-card p-3 rounded-xl bg-white/10">
@@ -295,11 +302,11 @@ const Index = () => {
             
             {/* Image Gallery */}
             <div className="grid grid-cols-2 gap-4">
-              {[1, 2, 3, 4].map((item) => (
-                <div key={item} className="glass-card rounded-xl overflow-hidden aspect-square hover:scale-105 transition-transform duration-300">
+              {galleryImages.map((src, index) => (
+                <div key={index} className="glass-card rounded-xl overflow-hidden aspect-square hover:scale-105 transition-transform duration-300">
                   <img 
-                    src="/placeholder.svg" 
-                    alt={`Galería item ${item}`}
+                    src={src} 
+                    alt={`Galería item ${index + 1}`}
                     className="w-full h-full object-cover"
                   />
                 </div>
