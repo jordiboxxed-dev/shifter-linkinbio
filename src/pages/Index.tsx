@@ -162,16 +162,18 @@ const Index = () => {
             VibeCoder | Automatizaciones & Agentes IA
           </h1>
           
-          <p className="text-lg md:text-xl text-gray-200 mb-4 max-w-2xl mx-auto">
-            Experto en:
-          </p>
-          
-          <div className="max-w-xs mx-auto text-left text-gray-300 space-y-1 mb-8">
-            <p>⚡ N8N</p>
-            <p>🔎 Scraping de datos</p>
-            <p>🤖 Agentes conversacionales</p>
-            <p>📝 Contenido con IA</p>
-            <p>🌐 Web Apps - SaaS</p>
+          <div className="max-w-xs mx-auto text-left">
+            <p className="text-lg md:text-xl text-gray-200 mb-4">
+              Experto en:
+            </p>
+            
+            <div className="text-gray-300 space-y-1 mb-8">
+              <p>⚡ N8N</p>
+              <p>🔎 Scraping de datos</p>
+              <p>🤖 Agentes conversacionales</p>
+              <p>📝 Contenido con IA</p>
+              <p>🌐 Web Apps - SaaS</p>
+            </div>
           </div>
           
           <div className="flex justify-center space-x-4 mb-8">
@@ -254,6 +256,51 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Media Section */}
+        <section className="py-4 md:py-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8 gradient-text">Último Contenido</h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* YouTube Video */}
+            <div className="glass-card rounded-2xl overflow-hidden">
+              <div className="aspect-video">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/ynn9eA8Hq2Y"
+                  title="creé una app de IA que genera contenido infinito gratis"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-lg font-bold mb-2">Creé una app de IA que genera contenido infinito gratis</h3>
+                <p className="text-gray-300 text-sm">Y encima de todo autopostea en todas tus redes sociales.</p>
+              </div>
+            </div>
+            
+            {/* Image Gallery */}
+            <div>
+              <h3 className="text-lg font-bold mb-4 text-center">Algunas de mis automatizaciones</h3>
+              <div className="grid grid-cols-2 gap-4">
+                {galleryImages.map((src, index) => (
+                  <div 
+                    key={index} 
+                    className="glass-card rounded-xl overflow-hidden aspect-square hover:scale-105 transition-transform duration-300 cursor-pointer"
+                    onClick={() => setSelectedImage(src)}
+                  >
+                    <img 
+                      src={src} 
+                      alt={`Galería item ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Quick Links Section */}
         <section className="py-4 md:py-8">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8 gradient-text">Links Rápidos</h2>
@@ -279,48 +326,6 @@ const Index = () => {
                 </a>
               );
             })}
-          </div>
-        </section>
-
-        {/* Media Section */}
-        <section className="py-4 md:py-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8 gradient-text">Último Contenido</h2>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* YouTube Video */}
-            <div className="glass-card rounded-2xl overflow-hidden">
-              <div className="aspect-video">
-                <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/ynn9eA8Hq2Y"
-                  title="creé una app de IA que genera contenido infinito gratis"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div className="p-4 text-center">
-                <h3 className="text-lg font-bold mb-2">Creé una app de IA que genera contenido infinito gratis</h3>
-                <p className="text-gray-300 text-sm">Y encima de todo autopostea en todas tus redes sociales.</p>
-              </div>
-            </div>
-            
-            {/* Image Gallery */}
-            <div className="grid grid-cols-2 gap-4">
-              {galleryImages.map((src, index) => (
-                <div 
-                  key={index} 
-                  className="glass-card rounded-xl overflow-hidden aspect-square hover:scale-105 transition-transform duration-300 cursor-pointer"
-                  onClick={() => setSelectedImage(src)}
-                >
-                  <img 
-                    src={src} 
-                    alt={`Galería item ${index + 1}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 
