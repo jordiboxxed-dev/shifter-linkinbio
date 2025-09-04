@@ -225,7 +225,7 @@ const Index = () => {
                       <div className="glass-card p-3 rounded-xl bg-white/10">
                         <Icon className="w-6 h-6 text-cyan-400" />
                       </div>
-                      <div>
+                      <div className="text-left">
                         <h3 className="text-xl font-semibold mb-1">{link.title}</h3>
                         <p className="text-gray-300">{link.description}</p>
                       </div>
