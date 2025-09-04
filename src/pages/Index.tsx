@@ -139,8 +139,8 @@ const Index = () => {
             <div className="relative">
               <div className="w-32 h-32 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 p-1 animate-pulse">
                 <img 
-                  src="/placeholder.svg" 
-                  alt="Profile" 
+                  src="/profile.jpeg" 
+                  alt="Jordi Shifter Profile" 
                   className="w-full h-full rounded-full object-cover border-4 border-white/20"
                 />
               </div>
@@ -277,14 +277,18 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* YouTube Video */}
             <div className="glass-card rounded-2xl overflow-hidden">
-              <div className="aspect-video bg-gray-800 flex items-center justify-center">
-                <div className="text-center">
-                  <Video className="w-16 h-16 mx-auto text-cyan-400 mb-4" />
-                  <p className="text-xl">Video Destacado</p>
-                </div>
+              <div className="aspect-video">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/ynn9eA8Hq2Y"
+                  title="Como Crear un Agente de IA con WhatsApp en 5 Minutos"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Automatizaciones con N8N y Agentes de IA</h3>
+                <h3 className="text-xl font-bold mb-2">Como Crear un Agente de IA con WhatsApp en 5 Minutos</h3>
                 <p className="text-gray-300">Descubre cómo conectar herramientas y crear flujos de trabajo inteligentes</p>
               </div>
             </div>
