@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { 
   Github, 
   Instagram, 
@@ -22,6 +23,7 @@ import { toast } from "sonner";
 
 const Index = () => {
   const [timeOfDay, setTimeOfDay] = useState("");
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   // Set greeting based on time of day
   useEffect(() => {
@@ -303,7 +305,11 @@ const Index = () => {
             {/* Image Gallery */}
             <div className="grid grid-cols-2 gap-4">
               {galleryImages.map((src, index) => (
-                <div key={index} className="glass-card rounded-xl overflow-hidden aspect-square hover:scale-105 transition-transform duration-300">
+                <div 
+                  key={index} 
+                  className="glass-card rounded-xl overflow-hidden aspect-square hover:scale-105 transition-transform duration-300 cursor-pointer"
+                  onClick={() => setSelectedImage(src)}
+                >
                   <img 
                     src={src} 
                     alt={`Galería item ${index + 1}`}
@@ -369,6 +375,19 @@ const Index = () => {
           </div>
         </section>
       </div>
+
+      {/* Image Lightbox Dialog */}
+      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+        <DialogContent className="p-0 border-0 max-w-4xl bg-transparent shadow-none">
+          {selectedImage && (
+            <img 
+              src={selectedImage} 
+              alt="Imagen ampliada" 
+              className="w-full h-auto rounded-lg object-contain"
+            />
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
