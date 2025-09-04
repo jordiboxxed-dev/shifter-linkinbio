@@ -281,15 +281,15 @@ const Index = () => {
                 <iframe
                   className="w-full h-full"
                   src="https://www.youtube.com/embed/ynn9eA8Hq2Y"
-                  title="Como Crear un Agente de IA con WhatsApp en 5 Minutos"
+                  title="creé una app de IA que genera contenido infinito gratis"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 ></iframe>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Como Crear un Agente de IA con WhatsApp en 5 Minutos</h3>
-                <p className="text-gray-300">Descubre cómo conectar herramientas y crear flujos de trabajo inteligentes</p>
+                <h3 className="text-xl font-bold mb-2">creé una app de IA que genera contenido infinito gratis</h3>
+                <p className="text-gray-300">y encima de todo autopostea en todas tus redes sociales.</p>
               </div>
             </div>
             
