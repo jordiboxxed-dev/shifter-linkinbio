@@ -13,7 +13,10 @@ import {
   Video,
   ShoppingCart,
   ExternalLink,
-  Music
+  Music,
+  MessageCircle,
+  FileText,
+  Share2
 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -28,27 +31,27 @@ const Index = () => {
     else setTimeOfDay("Buenas noches");
   }, []);
 
-  // Sample products data
-  const products = [
+  // Sample automations data
+  const automations = [
     {
       id: 1,
-      title: "Kit UI Premium",
-      description: "Sistema de diseño completo para apps web modernas",
-      price: "$49",
+      title: "Agente de IA con WhatsApp",
+      description: "Automatiza respuestas y procesos de negocio directamente desde WhatsApp",
+      price: "Desde $99/mes",
       image: "/placeholder.svg"
     },
     {
       id: 2,
-      title: "Componentes React",
-      description: "Componentes reutilizables con soporte TypeScript",
-      price: "$29",
+      title: "Creación de Contenido Automático",
+      description: "Genera contenido para redes sociales sin intervención manual",
+      price: "Desde $149/mes",
       image: "/placeholder.svg"
     },
     {
       id: 3,
-      title: "Plantillas de Diseño",
-      description: "Plantillas profesionales para cualquier proyecto",
-      price: "$19",
+      title: "Scraping de Redes Sociales",
+      description: "Recopila y analiza datos de múltiples plataformas sociales",
+      price: "Desde $199/mes",
       image: "/placeholder.svg"
     }
   ];
@@ -103,8 +106,8 @@ const Index = () => {
     },
     {
       id: 2,
-      title: "🛍️ Mis Productos",
-      description: "Recursos premium para creadores",
+      title: "🛍️ Mis Automatizaciones",
+      description: "Soluciones automatizadas para tu negocio",
       icon: ShoppingCart,
       href: "#",
       category: "products"
@@ -113,7 +116,7 @@ const Index = () => {
       id: 3,
       title: "☕ Trabajemos Juntos",
       description: "Consulta por servicios personalizados",
-      icon: Music,
+      icon: MessageCircle,
       href: "#",
       category: "support"
     }
@@ -149,12 +152,12 @@ const Index = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-200 mb-6 max-w-2xl mx-auto">
-            Desarrollador full-stack & diseñador UI/UX creando experiencias digitales hermosas
+            VibeCoder Experto y desarrollador de automatizaciones y agentes de IA
           </p>
           
           <p className="text-gray-300 mb-8 max-w-3xl mx-auto">
-            Construyo aplicaciones web modernas con React, TypeScript y Node.js. 
-            Apasionado por crear interfaces de usuario intuitivas y resolver problemas complejos.
+            Creo soluciones inteligentes que automatizan procesos y potencian negocios con inteligencia artificial. 
+            Especializado en agentes conversacionales, automatizaciones N8N y scraping de datos.
           </p>
           
           <div className="flex justify-center space-x-4 mb-12">
@@ -216,21 +219,19 @@ const Index = () => {
             {appLinks.map((link) => {
               const Icon = link.icon;
               return (
-                <a 
-                  key={link.id}
-                  href={link.href}
-                  className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20"
-                >
-                  <div className="flex items-start space-x-4">
-                    <div className="glass-card p-3 rounded-xl bg-white/10">
-                      <Icon className="w-6 h-6 text-cyan-400" />
+                <Card key={link.id} className="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="glass-card p-3 rounded-xl bg-white/10">
+                        <Icon className="w-6 h-6 text-cyan-400" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-semibold mb-1">{link.title}</h3>
+                        <p className="text-gray-300">{link.description}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="text-xl font-semibold mb-1">{link.title}</h3>
-                      <p className="text-gray-300">{link.description}</p>
-                    </div>
-                  </div>
-                </a>
+                  </CardContent>
+                </Card>
               );
             })}
           </div>
@@ -278,8 +279,8 @@ const Index = () => {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Construyendo Apps Web Modernas</h3>
-                <p className="text-gray-300">Aprende a crear aplicaciones responsivas con React y Tailwind CSS</p>
+                <h3 className="text-xl font-bold mb-2">Automatizaciones con N8N y Agentes de IA</h3>
+                <p className="text-gray-300">Descubre cómo conectar herramientas y crear flujos de trabajo inteligentes</p>
               </div>
             </div>
             
@@ -298,27 +299,27 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Products Section */}
+        {/* Automations Section */}
         <section className="py-12">
-          <h2 className="text-3xl font-bold text-center mb-12 gradient-text">Mis Productos</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 gradient-text">Automatizaciones N8N</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {products.map((product) => (
-              <div key={product.id} className="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300">
+            {automations.map((automation) => (
+              <div key={automation.id} className="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300">
                 <div className="aspect-video bg-gray-800 flex items-center justify-center">
                   <img 
-                    src={product.image} 
-                    alt={product.title}
+                    src={automation.image} 
+                    alt={automation.title}
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{product.title}</h3>
-                  <p className="text-gray-300 mb-4">{product.description}</p>
+                  <h3 className="text-xl font-bold mb-2">{automation.title}</h3>
+                  <p className="text-gray-300 mb-4">{automation.description}</p>
                   <div className="flex justify-between items-center">
-                    <span className="text-2xl font-bold text-cyan-400">{product.price}</span>
+                    <span className="text-2xl font-bold text-cyan-400">{automation.price}</span>
                     <Button className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600">
-                      Comprar Ahora
+                      Contratar
                     </Button>
                   </div>
                 </div>
