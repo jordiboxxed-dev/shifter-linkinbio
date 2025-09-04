@@ -9,12 +9,11 @@ import {
   Linkedin, 
   Youtube, 
   X,
-  TikTok,
-  Coffee,
   Users,
   Video,
   ShoppingCart,
-  ExternalLink
+  ExternalLink,
+  Music
 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -114,7 +113,7 @@ const Index = () => {
       id: 3,
       title: "☕ Trabajemos Juntos",
       description: "Consulta por servicios personalizados",
-      icon: Coffee,
+      icon: Music,
       href: "#",
       category: "support"
     }
@@ -165,12 +164,13 @@ const Index = () => {
               { icon: Linkedin, href: "#" },
               { icon: Youtube, href: "#" },
               { icon: Instagram, href: "#" },
-              { icon: TikTok, href: "#" }
+              { icon: Music, href: "#", label: "TikTok" }
             ].map((social, index) => (
               <a 
                 key={index}
                 href={social.href}
                 className="glass-card w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300 hover:bg-white/20"
+                title={social.label || ""}
               >
                 <social.icon className="w-6 h-6" />
               </a>
@@ -332,7 +332,7 @@ const Index = () => {
           <div className="flex justify-center space-x-6">
             {[
               { icon: Instagram, href: "#", name: "Instagram" },
-              { icon: TikTok, href: "#", name: "TikTok" },
+              { icon: Music, href: "#", name: "TikTok" },
               { icon: X, href: "#", name: "X (Twitter)" },
               { icon: Youtube, href: "#", name: "YouTube" },
               { icon: Github, href: "#", name: "GitHub" },
