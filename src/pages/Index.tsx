@@ -63,7 +63,7 @@ const Index = () => {
       title: "Mi Skool",
       description: "Sumate a mi comunidad sobre IA y automatizaciones",
       icon: Users,
-      href: "#",
+      href: "https://www.skool.com/boxxed-ai-6727/about?ref=494349c01611435b8fd952267c2bffbf",
       category: "community"
     }
   ];
@@ -74,7 +74,7 @@ const Index = () => {
       title: "Botboxx",
       description: "Instant AI Agent Demo",
       icon: ExternalLink,
-      href: "#",
+      href: "https://botboxx-demo-vip.vercel.app",
       category: "apps"
     },
     {
@@ -87,11 +87,12 @@ const Index = () => {
     },
     {
       id: 3,
-      title: "Musi AI",
-      description: "Investing Pool for Talent Hunters",
+      title: "Mussi AI",
+      description: "Coming Soon",
       icon: ExternalLink,
       href: "#",
-      category: "apps"
+      category: "apps",
+      disabled: true
     }
   ];
 
@@ -148,7 +149,7 @@ const Index = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-            {timeOfDay}, soy Jordi
+            Jordi Shifter
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-200 mb-6 max-w-2xl mx-auto">
@@ -219,7 +220,10 @@ const Index = () => {
             {appLinks.map((link) => {
               const Icon = link.icon;
               return (
-                <Card key={link.id} className="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20 bg-white/10 border border-white/20">
+                <Card 
+                  key={link.id} 
+                  className={`glass-card rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20 bg-white/10 border border-white/20 ${link.disabled ? 'opacity-70 cursor-not-allowed' : ''}`}
+                >
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
                       <div className="glass-card p-3 rounded-xl bg-white/10">
