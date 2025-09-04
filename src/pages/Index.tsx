@@ -142,12 +142,12 @@ const Index = () => {
         <div className="absolute bottom-1/4 left-1/2 w-80 h-80 bg-indigo-500 rounded-full mix-blend-soft-light filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
         {/* Hero Section */}
-        <section className="text-center pt-8 pb-12">
-          <div className="mb-8 flex justify-center">
+        <section className="text-center pt-4 pb-8">
+          <div className="mb-6 flex justify-center">
             <div className="relative">
-              <div className="w-32 h-32 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 p-1 animate-pulse">
+              <div className="w-28 h-28 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 p-1 animate-pulse">
                 <img 
                   src="/profile.jpeg" 
                   alt="Jordi Shifter Profile" 
@@ -158,27 +158,29 @@ const Index = () => {
             </div>
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-            Jordi Shifter
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            VibeCoder | Automatizaciones & Agentes IA
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-200 mb-6 max-w-2xl mx-auto">
-            VibeCoder Experto y desarrollador de automatizaciones y agentes de IA
+          <p className="text-lg md:text-xl text-gray-200 mb-4 max-w-2xl mx-auto">
+            Experto en:
           </p>
           
-          <p className="text-gray-300 mb-8 max-w-3xl mx-auto">
-            Creo soluciones inteligentes que automatizan procesos y potencian negocios con inteligencia artificial. 
-            Especializado en agentes conversacionales, automatizaciones N8N y scraping de datos.
-          </p>
+          <div className="max-w-xs mx-auto text-left text-gray-300 space-y-1 mb-8">
+            <p>⚡ N8N</p>
+            <p>🔎 Scraping de datos</p>
+            <p>🤖 Agentes conversacionales</p>
+            <p>📝 Contenido con IA</p>
+            <p>🌐 Web Apps - SaaS</p>
+          </div>
           
-          <div className="flex justify-center space-x-4 mb-8 md:mb-12">
+          <div className="flex justify-center space-x-4 mb-8">
             {[
-              { icon: Github, href: "#" },
-              { icon: Twitter, href: "#" },
-              { icon: Linkedin, href: "#" },
-              { icon: Youtube, href: "#" },
-              { icon: Instagram, href: "#" },
-              { icon: Music, href: "#", label: "TikTok" }
+              { icon: Github, href: "#", label: "GitHub" },
+              { icon: Twitter, href: "#", label: "Twitter" },
+              { icon: Linkedin, href: "#", label: "LinkedIn" },
+              { icon: Youtube, href: "#", label: "YouTube" },
+              { icon: Instagram, href: "#", label: "Instagram" },
             ].map((social, index) => (
               <a 
                 key={index}
@@ -193,26 +195,26 @@ const Index = () => {
         </section>
 
         {/* Community Section */}
-        <section className="py-8 md:py-12">
-          <h2 className="text-3xl font-bold text-center mb-8 md:mb-12 gradient-text">Comunidad Gratuita</h2>
+        <section className="py-4 md:py-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8 gradient-text">Comunidad Gratuita</h2>
           
           <div className="flex justify-center">
-            <div className="flex flex-wrap justify-center gap-6 max-w-4xl">
+            <div className="flex flex-wrap justify-center gap-4 max-w-4xl">
               {communityLinks.map((link) => {
                 const Icon = link.icon;
                 return (
                   <a 
                     key={link.id}
                     href={link.href}
-                    className="glass-card p-4 md:p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20 w-full max-w-sm"
+                    className="glass-card p-3 md:p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20 w-full max-w-sm"
                   >
-                    <div className="flex flex-col items-center text-center space-y-2 md:space-y-4">
-                      <div className="glass-card p-2 md:p-3 rounded-xl bg-white/10">
+                    <div className="flex flex-col items-center text-center space-y-1 md:space-y-3">
+                      <div className="glass-card p-2 rounded-xl bg-white/10">
                         <Icon className="w-6 h-6 text-cyan-400" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-semibold mb-1">{link.title}</h3>
-                        <p className="text-gray-300">{link.description}</p>
+                        <h3 className="text-lg md:text-xl font-semibold mb-1">{link.title}</h3>
+                        <p className="text-gray-300 text-sm">{link.description}</p>
                       </div>
                     </div>
                   </a>
@@ -223,10 +225,10 @@ const Index = () => {
         </section>
 
         {/* Apps Section */}
-        <section className="py-8 md:py-12">
-          <h2 className="text-3xl font-bold text-center mb-8 md:mb-12 gradient-text">Mis Web Apps</h2>
+        <section className="py-4 md:py-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8 gradient-text">Mis Web Apps</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {appLinks.map((link) => {
               const Icon = link.icon;
               return (
@@ -235,14 +237,14 @@ const Index = () => {
                   href={link.href}
                   className={`glass-card rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20 bg-white/10 border border-white/20 block ${link.disabled ? 'opacity-70 cursor-not-allowed' : ''}`}
                 >
-                  <CardContent className="p-4 md:p-6">
-                    <div className="flex flex-col items-center space-y-2 md:space-y-4">
-                      <div className="glass-card p-2 md:p-3 rounded-xl bg-white/10">
+                  <CardContent className="p-3 md:p-6">
+                    <div className="flex flex-col items-center space-y-1 md:space-y-3">
+                      <div className="glass-card p-2 rounded-xl bg-white/10">
                         <Icon className="w-6 h-6 text-cyan-400" />
                       </div>
                       <div className="text-center">
-                        <h3 className="text-xl font-semibold mb-1 text-white">{link.title}</h3>
-                        <p className="text-gray-300">{link.description}</p>
+                        <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">{link.title}</h3>
+                        <p className="text-gray-300 text-sm">{link.description}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -253,25 +255,25 @@ const Index = () => {
         </section>
 
         {/* Quick Links Section */}
-        <section className="py-8 md:py-12">
-          <h2 className="text-3xl font-bold text-center mb-8 md:mb-12 gradient-text">Links Rápidos</h2>
+        <section className="py-4 md:py-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8 gradient-text">Links Rápidos</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {quickLinks.map((link) => {
               const Icon = link.icon;
               return (
                 <a 
                   key={link.id}
                   href={link.href}
-                  className="glass-card p-4 md:p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20"
+                  className="glass-card p-3 md:p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20"
                 >
-                  <div className="flex flex-col items-center text-center space-y-2 md:space-y-4">
-                    <div className="glass-card p-2 md:p-3 rounded-xl bg-white/10">
+                  <div className="flex flex-col items-center text-center space-y-1 md:space-y-3">
+                    <div className="glass-card p-2 rounded-xl bg-white/10">
                       <Icon className="w-6 h-6 text-cyan-400" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-1">{link.title}</h3>
-                      <p className="text-gray-300">{link.description}</p>
+                      <h3 className="text-lg md:text-xl font-semibold mb-1">{link.title}</h3>
+                      <p className="text-gray-300 text-sm">{link.description}</p>
                     </div>
                   </div>
                 </a>
@@ -281,10 +283,10 @@ const Index = () => {
         </section>
 
         {/* Media Section */}
-        <section className="py-8 md:py-12">
-          <h2 className="text-3xl font-bold text-center mb-8 md:mb-12 gradient-text">Último Contenido</h2>
+        <section className="py-4 md:py-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8 gradient-text">Último Contenido</h2>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* YouTube Video */}
             <div className="glass-card rounded-2xl overflow-hidden">
               <div className="aspect-video">
@@ -297,9 +299,9 @@ const Index = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className="p-6 text-center">
-                <h3 className="text-xl font-bold mb-2">Creé una app de IA que genera contenido infinito gratis</h3>
-                <p className="text-gray-300">Y encima de todo autopostea en todas tus redes sociales.</p>
+              <div className="p-4 text-center">
+                <h3 className="text-lg font-bold mb-2">Creé una app de IA que genera contenido infinito gratis</h3>
+                <p className="text-gray-300 text-sm">Y encima de todo autopostea en todas tus redes sociales.</p>
               </div>
             </div>
             
@@ -323,10 +325,10 @@ const Index = () => {
         </section>
 
         {/* Automations Section */}
-        <section className="py-8 md:py-12">
-          <h2 className="text-3xl font-bold text-center mb-8 md:mb-12 gradient-text">Templates de N8N</h2>
+        <section className="py-4 md:py-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8 gradient-text">Templates de N8N</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {automations.map((automation) => (
               <div key={automation.id} className="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300">
                 <div className="aspect-video bg-gray-800 flex items-center justify-center">
@@ -336,11 +338,11 @@ const Index = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-4 md:p-6 text-center">
-                  <h3 className="text-xl font-bold mb-2">{automation.title}</h3>
-                  <p className="text-gray-300 mb-4">{automation.description}</p>
-                  <div className="flex flex-col items-center space-y-2 md:space-y-4">
-                    <span className="text-2xl font-bold text-cyan-400">{automation.price}</span>
+                <div className="p-3 md:p-6 text-center">
+                  <h3 className="text-lg md:text-xl font-bold mb-2">{automation.title}</h3>
+                  <p className="text-gray-300 text-sm mb-4">{automation.description}</p>
+                  <div className="flex flex-col items-center space-y-2">
+                    <span className="text-xl md:text-2xl font-bold text-cyan-400">{automation.price}</span>
                     <Button className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600">
                       Lo quiero
                     </Button>
@@ -352,10 +354,10 @@ const Index = () => {
         </section>
 
         {/* Social Media Section */}
-        <section className="py-8 md:py-12">
-          <h2 className="text-3xl font-bold text-center mb-8 md:mb-12 gradient-text">Seguime</h2>
+        <section className="py-4 md:py-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8 gradient-text">Seguime</h2>
           
-          <div className="flex justify-center space-x-6">
+          <div className="flex justify-center space-x-4">
             {[
               { icon: Instagram, href: "#", name: "Instagram" },
               { icon: Music, href: "#", name: "TikTok" },
@@ -367,10 +369,10 @@ const Index = () => {
               <a 
                 key={index}
                 href={social.href}
-                className="glass-card w-16 h-16 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300 hover:bg-white/20"
+                className="glass-card w-14 h-14 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300 hover:bg-white/20"
                 title={social.name}
               >
-                <social.icon className="w-8 h-8" />
+                <social.icon className="w-7 h-7" />
               </a>
             ))}
           </div>
