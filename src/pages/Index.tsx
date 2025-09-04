@@ -121,7 +121,7 @@ const Index = () => {
       title: "🤝 Trabajemos Juntos",
       description: "Consulta por servicios personalizados",
       icon: Handshake,
-      href: "#",
+      href: "https://www.instagram.com/jordishifter",
       category: "support"
     }
   ];
@@ -178,11 +178,11 @@ const Index = () => {
           
           <div className="flex justify-center space-x-4 mb-8">
             {[
-              { icon: Github, href: "#", label: "GitHub" },
-              { icon: Twitter, href: "#", label: "Twitter" },
-              { icon: Linkedin, href: "#", label: "LinkedIn" },
-              { icon: Youtube, href: "#", label: "YouTube" },
-              { icon: Instagram, href: "#", label: "Instagram" },
+              { icon: Twitter, href: "https://x.com/cryptoarchive88?s=21&t=1HFCohjBN3NZTVXjk2pj_A", label: "Twitter" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/jordi-shifter-22158291/", label: "LinkedIn" },
+              { icon: Youtube, href: "https://www.youtube.com/@jordishifter/videos", label: "YouTube" },
+              { icon: Instagram, href: "https://www.instagram.com/jordishifter", label: "Instagram" },
+              { icon: Music, href: "https://www.tiktok.com/@jordishifterok?_t=ZM-8zST9n28wuE&_r=1", label: "TikTok" },
             ].map((social, index) => (
               <a 
                 key={index}
@@ -364,12 +364,11 @@ const Index = () => {
           
           <div className="flex justify-center space-x-4">
             {[
-              { icon: Instagram, href: "#", name: "Instagram" },
-              { icon: Music, href: "#", name: "TikTok" },
-              { icon: Twitter, href: "#", name: "Twitter" },
-              { icon: Youtube, href: "#", name: "YouTube" },
-              { icon: Github, href: "#", name: "GitHub" },
-              { icon: Linkedin, href: "#", name: "LinkedIn" }
+              { icon: Instagram, href: "https://www.instagram.com/jordishifter", name: "Instagram" },
+              { icon: Music, href: "https://www.tiktok.com/@jordishifterok?_t=ZM-8zST9n28wuE&_r=1", name: "TikTok" },
+              { icon: Twitter, href: "https://x.com/cryptoarchive88?s=21&t=1HFCohjBN3NZTVXjk2pj_A", name: "Twitter" },
+              { icon: Youtube, href: "https://www.youtube.com/@jordishifter/videos", name: "YouTube" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/jordi-shifter-22158291/", name: "LinkedIn" }
             ].map((social, index) => (
               <a 
                 key={index}
