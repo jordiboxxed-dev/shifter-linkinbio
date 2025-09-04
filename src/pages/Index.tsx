@@ -8,7 +8,7 @@ import {
   Instagram, 
   Linkedin, 
   Youtube, 
-  X,
+  Twitter,
   Users,
   Video,
   ShoppingCart,
@@ -68,24 +68,24 @@ const Index = () => {
   const appLinks = [
     {
       id: 1,
-      title: "MyWebApp1",
-      description: "Aplicación web avanzada con funciones únicas",
+      title: "Botboxx",
+      description: "Instant AI Agent Demo",
       icon: ExternalLink,
       href: "#",
       category: "apps"
     },
     {
       id: 2,
-      title: "MyWebApp2",
-      description: "Herramienta de productividad para profesionales",
+      title: "Viti AI",
+      description: "Image Enhancement",
       icon: ExternalLink,
       href: "#",
       category: "apps"
     },
     {
       id: 3,
-      title: "MyWebApp3",
-      description: "Plataforma de análisis de datos en tiempo real",
+      title: "Musi AI",
+      description: "Coming Soon - Upcoming Artists Investing Pool for Talent Hunters",
       icon: ExternalLink,
       href: "#",
       category: "apps"
@@ -160,7 +160,7 @@ const Index = () => {
           <div className="flex justify-center space-x-4 mb-12">
             {[
               { icon: Github, href: "#" },
-              { icon: X, href: "#" },
+              { icon: Twitter, href: "#" },
               { icon: Linkedin, href: "#" },
               { icon: Youtube, href: "#" },
               { icon: Instagram, href: "#" },
@@ -182,27 +182,29 @@ const Index = () => {
         <section className="py-12">
           <h2 className="text-3xl font-bold text-center mb-12 gradient-text">Comunidad Gratuita</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {communityLinks.map((link) => {
-              const Icon = link.icon;
-              return (
-                <a 
-                  key={link.id}
-                  href={link.href}
-                  className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20"
-                >
-                  <div className="flex items-start space-x-4">
-                    <div className="glass-card p-3 rounded-xl bg-white/10">
-                      <Icon className="w-6 h-6 text-cyan-400" />
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl">
+              {communityLinks.map((link) => {
+                const Icon = link.icon;
+                return (
+                  <a 
+                    key={link.id}
+                    href={link.href}
+                    className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20"
+                  >
+                    <div className="flex items-start space-x-4">
+                      <div className="glass-card p-3 rounded-xl bg-white/10">
+                        <Icon className="w-6 h-6 text-cyan-400" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-semibold mb-1">{link.title}</h3>
+                        <p className="text-gray-300">{link.description}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="text-xl font-semibold mb-1">{link.title}</h3>
-                      <p className="text-gray-300">{link.description}</p>
-                    </div>
-                  </div>
-                </a>
-              );
-            })}
+                  </a>
+                );
+              })}
+            </div>
           </div>
         </section>
 
@@ -333,7 +335,7 @@ const Index = () => {
             {[
               { icon: Instagram, href: "#", name: "Instagram" },
               { icon: Music, href: "#", name: "TikTok" },
-              { icon: X, href: "#", name: "X (Twitter)" },
+              { icon: Twitter, href: "#", name: "Twitter" },
               { icon: Youtube, href: "#", name: "YouTube" },
               { icon: Github, href: "#", name: "GitHub" },
               { icon: Linkedin, href: "#", name: "LinkedIn" }
