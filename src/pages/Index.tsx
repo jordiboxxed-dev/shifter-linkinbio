@@ -15,7 +15,7 @@ import {
   ShoppingCart,
   ExternalLink,
   Music,
-  MessageCircle,
+  Handshake,
   FileText,
   Share2
 } from "lucide-react";
@@ -120,7 +120,7 @@ const Index = () => {
       id: 3,
       title: "☕ Trabajemos Juntos",
       description: "Consulta por servicios personalizados",
-      icon: MessageCircle,
+      icon: Handshake,
       href: "#",
       category: "support"
     }
