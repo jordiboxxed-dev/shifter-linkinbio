@@ -39,21 +39,21 @@ const Index = () => {
       id: 1,
       title: "Agente de IA con WhatsApp",
       description: "Automatiza respuestas y procesos de negocio directamente desde WhatsApp",
-      price: "Desde $99/mes",
+      price: "Gratis",
       image: "/placeholder.svg"
     },
     {
       id: 2,
       title: "Creación de Contenido Automático",
       description: "Genera contenido para redes sociales sin intervención manual",
-      price: "Desde $149/mes",
+      price: "Gratis",
       image: "/placeholder.svg"
     },
     {
       id: 3,
       title: "Scraping de Redes Sociales",
       description: "Recopila y analiza datos de múltiples plataformas sociales",
-      price: "Desde $199/mes",
+      price: "Gratis",
       image: "/placeholder.svg"
     }
   ];
@@ -82,15 +82,16 @@ const Index = () => {
     {
       id: 2,
       title: "Viti AI",
-      description: "Image Enhancement",
+      description: "Image Enhancement - Coming Soon",
       icon: ExternalLink,
       href: "#",
-      category: "apps"
+      category: "apps",
+      disabled: true
     },
     {
       id: 3,
       title: "Mussi AI",
-      description: "Coming Soon",
+      description: "Talent Pool for Talent Hunters - Coming Soon",
       icon: ExternalLink,
       href: "#",
       category: "apps",
@@ -104,7 +105,7 @@ const Index = () => {
       title: "📺 Últimos Videos",
       description: "Mira mi contenido más reciente",
       icon: Video,
-      href: "#",
+      href: "https://www.youtube.com/@jordishifter/videos",
       category: "media"
     },
     {
@@ -323,7 +324,7 @@ const Index = () => {
 
         {/* Automations Section */}
         <section className="py-12">
-          <h2 className="text-3xl font-bold text-center mb-12 gradient-text">Automatizaciones N8N</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 gradient-text">Templates de N8N</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {automations.map((automation) => (
@@ -341,7 +342,7 @@ const Index = () => {
                   <div className="flex flex-col items-center space-y-4">
                     <span className="text-2xl font-bold text-cyan-400">{automation.price}</span>
                     <Button className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600">
-                      Contratar
+                      Lo quiero
                     </Button>
                   </div>
                 </div>
