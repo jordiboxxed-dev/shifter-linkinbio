@@ -142,9 +142,9 @@ const Index = () => {
         <div className="absolute bottom-1/4 left-1/2 w-80 h-80 bg-indigo-500 rounded-full mix-blend-soft-light filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         {/* Hero Section */}
-        <section className="text-center py-16">
+        <section className="text-center pt-8 pb-12">
           <div className="mb-8 flex justify-center">
             <div className="relative">
               <div className="w-32 h-32 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 p-1 animate-pulse">
@@ -171,7 +171,7 @@ const Index = () => {
             Especializado en agentes conversacionales, automatizaciones N8N y scraping de datos.
           </p>
           
-          <div className="flex justify-center space-x-4 mb-12">
+          <div className="flex justify-center space-x-4 mb-8 md:mb-12">
             {[
               { icon: Github, href: "#" },
               { icon: Twitter, href: "#" },
@@ -193,8 +193,8 @@ const Index = () => {
         </section>
 
         {/* Community Section */}
-        <section className="py-12">
-          <h2 className="text-3xl font-bold text-center mb-12 gradient-text">Comunidad Gratuita</h2>
+        <section className="py-8 md:py-12">
+          <h2 className="text-3xl font-bold text-center mb-8 md:mb-12 gradient-text">Comunidad Gratuita</h2>
           
           <div className="flex justify-center">
             <div className="flex flex-wrap justify-center gap-6 max-w-4xl">
@@ -204,10 +204,10 @@ const Index = () => {
                   <a 
                     key={link.id}
                     href={link.href}
-                    className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20 w-full max-w-sm"
+                    className="glass-card p-4 md:p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20 w-full max-w-sm"
                   >
-                    <div className="flex flex-col items-center text-center space-y-4">
-                      <div className="glass-card p-3 rounded-xl bg-white/10">
+                    <div className="flex flex-col items-center text-center space-y-2 md:space-y-4">
+                      <div className="glass-card p-2 md:p-3 rounded-xl bg-white/10">
                         <Icon className="w-6 h-6 text-cyan-400" />
                       </div>
                       <div>
@@ -223,8 +223,8 @@ const Index = () => {
         </section>
 
         {/* Apps Section */}
-        <section className="py-12">
-          <h2 className="text-3xl font-bold text-center mb-12 gradient-text">Mis Web Apps</h2>
+        <section className="py-8 md:py-12">
+          <h2 className="text-3xl font-bold text-center mb-8 md:mb-12 gradient-text">Mis Web Apps</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {appLinks.map((link) => {
@@ -235,9 +235,9 @@ const Index = () => {
                   href={link.href}
                   className={`glass-card rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20 bg-white/10 border border-white/20 block ${link.disabled ? 'opacity-70 cursor-not-allowed' : ''}`}
                 >
-                  <CardContent className="p-6">
-                    <div className="flex flex-col items-center space-y-4">
-                      <div className="glass-card p-3 rounded-xl bg-white/10">
+                  <CardContent className="p-4 md:p-6">
+                    <div className="flex flex-col items-center space-y-2 md:space-y-4">
+                      <div className="glass-card p-2 md:p-3 rounded-xl bg-white/10">
                         <Icon className="w-6 h-6 text-cyan-400" />
                       </div>
                       <div className="text-center">
@@ -253,8 +253,8 @@ const Index = () => {
         </section>
 
         {/* Quick Links Section */}
-        <section className="py-12">
-          <h2 className="text-3xl font-bold text-center mb-12 gradient-text">Links Rápidos</h2>
+        <section className="py-8 md:py-12">
+          <h2 className="text-3xl font-bold text-center mb-8 md:mb-12 gradient-text">Links Rápidos</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {quickLinks.map((link) => {
@@ -263,10 +263,10 @@ const Index = () => {
                 <a 
                   key={link.id}
                   href={link.href}
-                  className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20"
+                  className="glass-card p-4 md:p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20"
                 >
-                  <div className="flex flex-col items-center text-center space-y-4">
-                    <div className="glass-card p-3 rounded-xl bg-white/10">
+                  <div className="flex flex-col items-center text-center space-y-2 md:space-y-4">
+                    <div className="glass-card p-2 md:p-3 rounded-xl bg-white/10">
                       <Icon className="w-6 h-6 text-cyan-400" />
                     </div>
                     <div>
@@ -281,8 +281,8 @@ const Index = () => {
         </section>
 
         {/* Media Section */}
-        <section className="py-12">
-          <h2 className="text-3xl font-bold text-center mb-12 gradient-text">Último Contenido</h2>
+        <section className="py-8 md:py-12">
+          <h2 className="text-3xl font-bold text-center mb-8 md:mb-12 gradient-text">Último Contenido</h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* YouTube Video */}
@@ -323,8 +323,8 @@ const Index = () => {
         </section>
 
         {/* Automations Section */}
-        <section className="py-12">
-          <h2 className="text-3xl font-bold text-center mb-12 gradient-text">Templates de N8N</h2>
+        <section className="py-8 md:py-12">
+          <h2 className="text-3xl font-bold text-center mb-8 md:mb-12 gradient-text">Templates de N8N</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {automations.map((automation) => (
@@ -336,10 +336,10 @@ const Index = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-6 text-center">
+                <div className="p-4 md:p-6 text-center">
                   <h3 className="text-xl font-bold mb-2">{automation.title}</h3>
                   <p className="text-gray-300 mb-4">{automation.description}</p>
-                  <div className="flex flex-col items-center space-y-4">
+                  <div className="flex flex-col items-center space-y-2 md:space-y-4">
                     <span className="text-2xl font-bold text-cyan-400">{automation.price}</span>
                     <Button className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600">
                       Lo quiero
@@ -352,8 +352,8 @@ const Index = () => {
         </section>
 
         {/* Social Media Section */}
-        <section className="py-12">
-          <h2 className="text-3xl font-bold text-center mb-12 gradient-text">Seguime</h2>
+        <section className="py-8 md:py-12">
+          <h2 className="text-3xl font-bold text-center mb-8 md:mb-12 gradient-text">Seguime</h2>
           
           <div className="flex justify-center space-x-6">
             {[
