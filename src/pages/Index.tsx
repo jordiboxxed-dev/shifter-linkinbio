@@ -73,7 +73,7 @@ const Index = () => {
   const appLinks = [
     {
       id: 1,
-      title: "Botboxx",
+      title: "BotBoxx",
       description: "Instant AI Agent Demo",
       icon: ExternalLink,
       href: "https://botboxx-demo-vip.vercel.app",
@@ -118,7 +118,7 @@ const Index = () => {
     },
     {
       id: 3,
-      title: "☕ Trabajemos Juntos",
+      title: "🤝 Trabajemos Juntos",
       description: "Consulta por servicios personalizados",
       icon: Handshake,
       href: "#",
