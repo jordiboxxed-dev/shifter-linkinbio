@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { 
-  Github, 
   Instagram, 
   Linkedin, 
   Youtube, 
@@ -14,10 +13,8 @@ import {
   Video,
   ShoppingCart,
   ExternalLink,
-  Music,
-  Handshake,
-  FileText,
-  Share2
+  Music2,
+  Handshake
 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -164,7 +161,7 @@ const Index = () => {
           
           <div className="max-w-xs mx-auto text-left">
             <p className="text-lg md:text-xl text-gray-200 mb-4">
-              Experto en:
+              Especializado en:
             </p>
             
             <div className="text-gray-300 space-y-1 mb-8">
@@ -182,7 +179,7 @@ const Index = () => {
               { icon: Linkedin, href: "https://www.linkedin.com/in/jordi-shifter-22158291/", label: "LinkedIn" },
               { icon: Youtube, href: "https://www.youtube.com/@jordishifter/videos", label: "YouTube" },
               { icon: Instagram, href: "https://www.instagram.com/jordishifter", label: "Instagram" },
-              { icon: Music, href: "https://www.tiktok.com/@jordishifterok?_t=ZM-8zST9n28wuE&_r=1", label: "TikTok" },
+              { icon: Music2, href: "https://www.tiktok.com/@jordishifterok?_t=ZM-8zST9n28wuE&_r=1", label: "TikTok" },
             ].map((social, index) => (
               <a 
                 key={index}
@@ -365,7 +362,7 @@ const Index = () => {
           <div className="flex justify-center space-x-4">
             {[
               { icon: Instagram, href: "https://www.instagram.com/jordishifter", name: "Instagram" },
-              { icon: Music, href: "https://www.tiktok.com/@jordishifterok?_t=ZM-8zST9n28wuE&_r=1", name: "TikTok" },
+              { icon: Music2, href: "https://www.tiktok.com/@jordishifterok?_t=ZM-8zST9n28wuE&_r=1", name: "TikTok" },
               { icon: Twitter, href: "https://x.com/cryptoarchive88?s=21&t=1HFCohjBN3NZTVXjk2pj_A", name: "Twitter" },
               { icon: Youtube, href: "https://www.youtube.com/@jordishifter/videos", name: "YouTube" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/jordi-shifter-22158291/", name: "LinkedIn" }
