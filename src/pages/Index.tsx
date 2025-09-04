@@ -88,7 +88,7 @@ const Index = () => {
     {
       id: 3,
       title: "Musi AI",
-      description: "Coming Soon - Upcoming Artists Investing Pool for Talent Hunters",
+      description: "Investing Pool for Talent Hunters",
       icon: ExternalLink,
       href: "#",
       category: "apps"
@@ -219,14 +219,14 @@ const Index = () => {
             {appLinks.map((link) => {
               const Icon = link.icon;
               return (
-                <Card key={link.id} className="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20">
+                <Card key={link.id} className="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20 bg-white/10 border border-white/20">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
                       <div className="glass-card p-3 rounded-xl bg-white/10">
                         <Icon className="w-6 h-6 text-cyan-400" />
                       </div>
                       <div className="text-left">
-                        <h3 className="text-xl font-semibold mb-1">{link.title}</h3>
+                        <h3 className="text-xl font-semibold mb-1 text-white">{link.title}</h3>
                         <p className="text-gray-300">{link.description}</p>
                       </div>
                     </div>
