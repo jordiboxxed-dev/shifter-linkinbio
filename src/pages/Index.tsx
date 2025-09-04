@@ -196,7 +196,7 @@ const Index = () => {
                     href={link.href}
                     className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20"
                   >
-                    <div className="flex items-start space-x-4">
+                    <div className="flex flex-col items-center text-center space-y-4">
                       <div className="glass-card p-3 rounded-xl bg-white/10">
                         <Icon className="w-6 h-6 text-cyan-400" />
                       </div>
@@ -226,11 +226,11 @@ const Index = () => {
                   className={`glass-card rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20 bg-white/10 border border-white/20 block ${link.disabled ? 'opacity-70 cursor-not-allowed' : ''}`}
                 >
                   <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
+                    <div className="flex flex-col items-center space-y-4">
                       <div className="glass-card p-3 rounded-xl bg-white/10">
                         <Icon className="w-6 h-6 text-cyan-400" />
                       </div>
-                      <div className="text-left">
+                      <div className="text-center">
                         <h3 className="text-xl font-semibold mb-1 text-white">{link.title}</h3>
                         <p className="text-gray-300">{link.description}</p>
                       </div>
@@ -255,7 +255,7 @@ const Index = () => {
                   href={link.href}
                   className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20"
                 >
-                  <div className="flex items-start space-x-4">
+                  <div className="flex flex-col items-center text-center space-y-4">
                     <div className="glass-card p-3 rounded-xl bg-white/10">
                       <Icon className="w-6 h-6 text-cyan-400" />
                     </div>
@@ -287,7 +287,7 @@ const Index = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className="p-6">
+              <div className="p-6 text-center">
                 <h3 className="text-xl font-bold mb-2">Creé una app de IA que genera contenido infinito gratis</h3>
                 <p className="text-gray-300">Y encima de todo autopostea en todas tus redes sociales.</p>
               </div>
@@ -322,10 +322,10 @@ const Index = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-6 text-center">
                   <h3 className="text-xl font-bold mb-2">{automation.title}</h3>
                   <p className="text-gray-300 mb-4">{automation.description}</p>
-                  <div className="flex justify-between items-center">
+                  <div className="flex flex-col items-center space-y-4">
                     <span className="text-2xl font-bold text-cyan-400">{automation.price}</span>
                     <Button className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600">
                       Contratar
