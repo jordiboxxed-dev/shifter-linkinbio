@@ -220,9 +220,10 @@ const Index = () => {
             {appLinks.map((link) => {
               const Icon = link.icon;
               return (
-                <Card 
-                  key={link.id} 
-                  className={`glass-card rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20 bg-white/10 border border-white/20 ${link.disabled ? 'opacity-70 cursor-not-allowed' : ''}`}
+                <a 
+                  key={link.id}
+                  href={link.href}
+                  className={`glass-card rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20 bg-white/10 border border-white/20 block ${link.disabled ? 'opacity-70 cursor-not-allowed' : ''}`}
                 >
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
@@ -235,7 +236,7 @@ const Index = () => {
                       </div>
                     </div>
                   </CardContent>
-                </Card>
+                </a>
               );
             })}
           </div>
