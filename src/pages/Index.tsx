@@ -79,7 +79,7 @@ const Index = () => {
     {
       id: 2,
       title: "Viti AI",
-      description: "Image Enhancement - Coming Soon",
+      description: "Mockup Studio Pro - Coming Soon",
       icon: ExternalLink,
       href: "#",
       category: "apps",
