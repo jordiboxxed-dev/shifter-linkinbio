@@ -159,18 +159,18 @@ const Index = () => {
             VibeCoder | Automatizaciones & Agentes IA
           </h1>
           
-          <div className="max-w-md mx-auto">
-            <p className="text-lg md:text-xl text-gray-200 mb-4 text-center">
+          <div className="max-w-md mx-auto text-center">
+            <p className="text-lg md:text-xl text-gray-200 mb-4">
               Especializado en:
             </p>
             
-            <div className="grid grid-cols-2 gap-x-8 gap-y-2 text-gray-300 mb-8">
+            <div className="inline-grid grid-cols-2 gap-x-8 gap-y-2 text-gray-300 mb-8 text-left">
               <p>⚡ N8N</p>
               <p>🔎 Scraping de datos</p>
               <p>🤖 Agentes conversacionales</p>
               <p>📝 Contenido con IA</p>
               <p>🌐 Web Apps - SaaS</p>
-              <p>🚀 Flujos de trabajo inteligentes</p>
+              <p>🚀 Smart Flows</p>
             </div>
           </div>
           
