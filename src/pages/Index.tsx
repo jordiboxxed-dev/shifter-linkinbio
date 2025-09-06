@@ -212,7 +212,7 @@ const Index = () => {
                       <div className="glass-card p-2 rounded-xl bg-white/10 flex-shrink-0">
                         <Icon className="w-5 h-5 text-cyan-400" />
                       </div>
-                      <div className="text-left">
+                      <div className="flex-grow text-center">
                         <h3 className="text-lg font-semibold">{link.title}</h3>
                         <p className="text-gray-300 text-sm">{link.description}</p>
                       </div>
@@ -242,7 +242,7 @@ const Index = () => {
                       <div className="glass-card p-2 rounded-xl bg-white/10 flex-shrink-0">
                         <Icon className="w-5 h-5 text-cyan-400" />
                       </div>
-                      <div className="text-left">
+                      <div className="flex-grow text-center">
                         <h3 className="text-lg font-semibold text-white">{link.title}</h3>
                         <p className="text-gray-300 text-sm">{link.description}</p>
                       </div>
@@ -316,7 +316,7 @@ const Index = () => {
                     <div className="glass-card p-2 rounded-xl bg-white/10 flex-shrink-0">
                       <Icon className="w-5 h-5 text-cyan-400" />
                     </div>
-                    <div className="text-left">
+                    <div className="flex-grow text-center">
                       <h3 className="text-lg font-semibold">{link.title}</h3>
                       <p className="text-gray-300 text-sm">{link.description}</p>
                     </div>
