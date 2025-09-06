@@ -14,7 +14,10 @@ import {
   ShoppingCart,
   ExternalLink,
   Music2,
-  Handshake
+  Handshake,
+  Bot,
+  Palette,
+  Music
 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -72,7 +75,7 @@ const Index = () => {
       id: 1,
       title: "BotBoxx",
       description: "Instant AI Agent Demo",
-      icon: ExternalLink,
+      icon: Bot,
       href: "https://botboxx-demo-vip.vercel.app",
       category: "apps"
     },
@@ -80,7 +83,7 @@ const Index = () => {
       id: 2,
       title: "Viti AI",
       description: "Mockup Studio Pro - Coming Soon",
-      icon: ExternalLink,
+      icon: Palette,
       href: "#",
       category: "apps",
       disabled: true
@@ -89,7 +92,7 @@ const Index = () => {
       id: 3,
       title: "Mussi AI",
       description: "Talent Pool for Talent Hunters - Coming Soon",
-      icon: ExternalLink,
+      icon: Music,
       href: "#",
       category: "apps",
       disabled: true
