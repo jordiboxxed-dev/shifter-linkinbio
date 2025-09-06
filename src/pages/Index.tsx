@@ -206,14 +206,14 @@ const Index = () => {
                   <a 
                     key={link.id}
                     href={link.href}
-                    className="glass-card p-3 md:p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20 w-full max-w-sm"
+                    className="glass-card p-4 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20 w-full max-w-sm"
                   >
-                    <div className="flex flex-col items-center text-center space-y-1 md:space-y-3">
-                      <div className="glass-card p-2 rounded-xl bg-white/10">
-                        <Icon className="w-6 h-6 text-cyan-400" />
+                    <div className="flex items-center space-x-4">
+                      <div className="glass-card p-2 rounded-xl bg-white/10 flex-shrink-0">
+                        <Icon className="w-5 h-5 text-cyan-400" />
                       </div>
-                      <div>
-                        <h3 className="text-lg md:text-xl font-semibold mb-1">{link.title}</h3>
+                      <div className="text-left">
+                        <h3 className="text-lg font-semibold">{link.title}</h3>
                         <p className="text-gray-300 text-sm">{link.description}</p>
                       </div>
                     </div>
@@ -237,13 +237,13 @@ const Index = () => {
                   href={link.href}
                   className={`glass-card rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20 bg-white/10 border border-white/20 block ${link.disabled ? 'opacity-70 cursor-not-allowed' : ''}`}
                 >
-                  <CardContent className="p-3 md:p-6">
-                    <div className="flex flex-col items-center space-y-1 md:space-y-3">
-                      <div className="glass-card p-2 rounded-xl bg-white/10">
-                        <Icon className="w-6 h-6 text-cyan-400" />
+                  <CardContent className="p-4">
+                    <div className="flex items-center space-x-4">
+                      <div className="glass-card p-2 rounded-xl bg-white/10 flex-shrink-0">
+                        <Icon className="w-5 h-5 text-cyan-400" />
                       </div>
-                      <div className="text-center">
-                        <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">{link.title}</h3>
+                      <div className="text-left">
+                        <h3 className="text-lg font-semibold text-white">{link.title}</h3>
                         <p className="text-gray-300 text-sm">{link.description}</p>
                       </div>
                     </div>
@@ -310,14 +310,14 @@ const Index = () => {
                 <a 
                   key={link.id}
                   href={link.href}
-                  className="glass-card p-3 md:p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20"
+                  className="glass-card p-4 rounded-2xl hover:scale-105 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20"
                 >
-                  <div className="flex flex-col items-center text-center space-y-1 md:space-y-3">
-                    <div className="glass-card p-2 rounded-xl bg-white/10">
-                      <Icon className="w-6 h-6 text-cyan-400" />
+                  <div className="flex items-center space-x-4">
+                    <div className="glass-card p-2 rounded-xl bg-white/10 flex-shrink-0">
+                      <Icon className="w-5 h-5 text-cyan-400" />
                     </div>
-                    <div>
-                      <h3 className="text-lg md:text-xl font-semibold mb-1">{link.title}</h3>
+                    <div className="text-left">
+                      <h3 className="text-lg font-semibold">{link.title}</h3>
                       <p className="text-gray-300 text-sm">{link.description}</p>
                     </div>
                   </div>
