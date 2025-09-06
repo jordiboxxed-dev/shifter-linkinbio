@@ -167,7 +167,7 @@ const Index = () => {
             <div className="inline-grid grid-cols-2 gap-x-8 gap-y-2 text-gray-300 mb-8 text-left">
               <p>⚡ N8N</p>
               <p>🔎 Scraping de datos</p>
-              <p>🤖 Agentes conversacionales</p>
+              <p>🤖 Multi-Agentes</p>
               <p>📝 Contenido con IA</p>
               <p>🌐 Web Apps - SaaS</p>
               <p>🚀 Smart Flows</p>
