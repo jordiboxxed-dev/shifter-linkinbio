@@ -159,7 +159,7 @@ const Index = () => {
           </div>
           
           <h1 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-            VibeCoder | Automatizaciones & Agentes IA
+            VibeCoder | Infraestructura IA
           </h1>
           
           <div className="max-w-md mx-auto text-center">
