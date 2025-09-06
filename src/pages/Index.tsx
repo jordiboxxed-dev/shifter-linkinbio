@@ -63,7 +63,7 @@ const Index = () => {
     {
       id: 1,
       title: "Mi Skool",
-      description: "Sumate a mi comunidad sobre IA y automatizaciones",
+      description: "Comunidad sobre IA y automatizaciones.",
       icon: Users,
       href: "https://www.skool.com/boxxed-ai-6727/about?ref=494349c01611435b8fd952267c2bffbf",
       category: "community"
