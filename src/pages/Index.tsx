@@ -133,6 +133,15 @@ const Index = () => {
     "/gallery-4.jpg",
   ];
 
+  const specializations = [
+    "⚡ N8N",
+    "🔎 Scraping de datos",
+    "🤖 Multi-Agentes",
+    "📝 Contenido con IA",
+    "🌐 Web Apps - SaaS",
+    "🚀 Smart Flows"
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white overflow-hidden relative">
       {/* Animated background elements */}
@@ -162,18 +171,20 @@ const Index = () => {
             VibeCoder | Infraestructura IA
           </h1>
           
-          <div className="max-w-md mx-auto text-center">
+          <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg md:text-xl text-gray-200 mb-4">
               Especializado en:
             </p>
             
-            <div className="inline-grid grid-cols-2 gap-x-8 gap-y-2 text-gray-300 mb-8 text-left">
-              <p>⚡ N8N</p>
-              <p>🔎 Scraping de datos</p>
-              <p>🤖 Multi-Agentes</p>
-              <p>📝 Contenido con IA</p>
-              <p>🌐 Web Apps - SaaS</p>
-              <p>🚀 Smart Flows</p>
+            <div className="flex flex-wrap justify-center gap-3 mb-8">
+              {specializations.map((skill, index) => (
+                <span 
+                  key={index}
+                  className="glass-card px-4 py-2 rounded-full text-sm font-medium text-gray-200 hover:scale-105 hover:bg-white/20 transition-all duration-300 cursor-default"
+                >
+                  {skill}
+                </span>
+              ))}
             </div>
           </div>
           
