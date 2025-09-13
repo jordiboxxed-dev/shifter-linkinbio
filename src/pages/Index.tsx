@@ -278,16 +278,16 @@ const Index = () => {
               <div className="aspect-video">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/ynn9eA8Hq2Y"
-                  title="creé una app de IA que genera contenido infinito gratis"
+                  src="https://www.youtube.com/embed/kemcb6oLdkU"
+                  title="Cree un agente de IA con WHATSAPP en 5 minutos (GRATIS)"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 ></iframe>
               </div>
               <div className="p-4 text-center">
-                <h3 className="text-lg font-bold mb-2">Creé una app de IA que genera contenido infinito gratis</h3>
-                <p className="text-gray-300 text-sm">Y encima de todo autopostea en todas tus redes sociales.</p>
+                <h3 className="text-lg font-bold mb-2">Agente de IA con WhatsApp en 5 Minutos</h3>
+                <p className="text-gray-300 text-sm">Aprende a conectar WhatsApp con la API de OpenAI usando N8N.</p>
               </div>
             </div>
             
