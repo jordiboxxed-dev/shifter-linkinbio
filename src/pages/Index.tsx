@@ -144,11 +144,9 @@ const Index = () => {
 
   const specializations = [
     "⚡ N8N",
-    "🔎 Scraping de datos",
     "🤖 Multi-Agentes",
     "📝 Contenido con IA",
     "🌐 Web Apps - SaaS",
-    "🚀 Smart Flows"
   ];
 
   return (
@@ -162,7 +160,7 @@ const Index = () => {
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
         {/* Hero Section */}
-        <section className="text-center pt-4 pb-8">
+        <section className="text-center pt-4 pb-0">
           <div className="mb-6 flex justify-center">
             <div className="relative">
               <div className="w-28 h-28 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 p-1 animate-pulse">
@@ -197,7 +195,7 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="flex justify-center space-x-4 mb-8">
+          <div className="flex justify-center space-x-4">
             {[
               { icon: Twitter, href: "https://x.com/cryptoarchive88?s=21&t=1HFCohjBN3NZTVXjk2pj_A", label: "Twitter" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/jordi-shifter-22158291/", label: "LinkedIn" },
@@ -218,7 +216,7 @@ const Index = () => {
         </section>
 
         {/* Community Section */}
-        <section className="py-4 md:py-8">
+        <section className="py-4 md:py-8 pt-8">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8 gradient-text">Comunidad Gratuita</h2>
           
           <div className="flex justify-center">
