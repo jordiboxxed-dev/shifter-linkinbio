@@ -17,7 +17,8 @@ import {
   Handshake,
   Bot,
   Palette,
-  Music
+  Music,
+  Calculator
 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -81,6 +82,14 @@ const Index = () => {
     },
     {
       id: 2,
+      title: "Cuanto Valgo",
+      description: "Calculadora de cuánto vales en cosas random.",
+      icon: Calculator,
+      href: "https://cuantovalgo.vercel.app/",
+      category: "apps"
+    },
+    {
+      id: 3,
       title: "Viti AI",
       description: "Mockup Studio Pro - Coming Soon",
       icon: Palette,
@@ -89,7 +98,7 @@ const Index = () => {
       disabled: true
     },
     {
-      id: 3,
+      id: 4,
       title: "Mussi AI",
       description: "Talent Pool for Talent Hunters - Coming Soon",
       icon: Music,
