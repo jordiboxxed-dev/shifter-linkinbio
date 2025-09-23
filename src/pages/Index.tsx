@@ -130,7 +130,7 @@ const Index = () => {
       title: "🤝 Trabajemos Juntos",
       description: "Consulta por servicios personalizados",
       icon: Handshake,
-      href: "https://www.instagram.com/jordishifter",
+      href: "https://www.instagram.com/jordigpt",
       category: "support"
     }
   ];
@@ -200,7 +200,7 @@ const Index = () => {
               { icon: Twitter, href: "https://x.com/cryptoarchive88?s=21&t=1HFCohjBN3NZTVXjk2pj_A", label: "Twitter" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/jordi-shifter-22158291/", label: "LinkedIn" },
               { icon: Youtube, href: "https://www.youtube.com/@jordishifter/videos", label: "YouTube" },
-              { icon: Instagram, href: "https://www.instagram.com/jordishifter", label: "Instagram" },
+              { icon: Instagram, href: "https://www.instagram.com/jordigpt", label: "Instagram" },
               { icon: Music2, href: "https://www.tiktok.com/@jordishifterok?_t=ZM-8zST9n28wuE&_r=1", label: "TikTok" },
             ].map((social, index) => (
               <a 
@@ -383,7 +383,7 @@ const Index = () => {
           
           <div className="flex justify-center space-x-4">
             {[
-              { icon: Instagram, href: "https://www.instagram.com/jordishifter", name: "Instagram" },
+              { icon: Instagram, href: "https://www.instagram.com/jordigpt", name: "Instagram" },
               { icon: Music2, href: "https://www.tiktok.com/@jordishifterok?_t=ZM-8zST9n28wuE&_r=1", name: "TikTok" },
               { icon: Twitter, href: "https://x.com/cryptoarchive88?s=21&t=1HFCohjBN3NZTVXjk2pj_A", name: "Twitter" },
               { icon: Youtube, href: "https://www.youtube.com/@jordishifter/videos", name: "YouTube" },
