@@ -77,7 +77,7 @@ const Index = () => {
       title: "BotBoxx",
       description: "Instant AI Agent Demo",
       icon: Bot,
-      href: "https://botboxx-demo-vip.vercel.app",
+      href: "https://botboxxlanding.boxxed.agency/",
       category: "apps"
     },
     {
