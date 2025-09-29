@@ -34,31 +34,6 @@ const Index = () => {
     else setTimeOfDay("Buenas noches");
   }, []);
 
-  // Sample automations data
-  const automations = [
-    {
-      id: 1,
-      title: "Agente de IA con WhatsApp",
-      description: "Automatiza respuestas y procesos de negocio directamente desde WhatsApp",
-      price: "Gratis",
-      image: "/placeholder.svg"
-    },
-    {
-      id: 2,
-      title: "Creación de Contenido Automático",
-      description: "Genera contenido para redes sociales sin intervención manual",
-      price: "Gratis",
-      image: "/placeholder.svg"
-    },
-    {
-      id: 3,
-      title: "Scraping de Redes Sociales",
-      description: "Recopila y analiza datos de múltiples plataformas sociales",
-      price: "Gratis",
-      image: "/placeholder.svg"
-    }
-  ];
-
   // Sample links data
   const communityLinks = [
     {
@@ -345,35 +320,6 @@ const Index = () => {
                 </a>
               );
             })}
-          </div>
-        </section>
-
-        {/* Automations Section */}
-        <section className="py-4 md:py-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8 gradient-text">Templates de N8N</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {automations.map((automation) => (
-              <div key={automation.id} className="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300">
-                <div className="aspect-video bg-gray-800 flex items-center justify-center">
-                  <img 
-                    src={automation.image} 
-                    alt={automation.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-3 md:p-6 text-center">
-                  <h3 className="text-lg md:text-xl font-bold mb-2">{automation.title}</h3>
-                  <p className="text-gray-300 text-sm mb-4">{automation.description}</p>
-                  <div className="flex flex-col items-center space-y-2">
-                    <span className="text-xl md:text-2xl font-bold text-cyan-400">{automation.price}</span>
-                    <Button className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600">
-                      Lo quiero
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </section>
 
