@@ -19,7 +19,6 @@ import {
   Music,
   Calculator
 } from "lucide-react";
-import { ThreeDPhotoCarousel } from "@/components/ui/3d-carousel";
 
 const Index = () => {
   const [timeOfDay, setTimeOfDay] = useState("");
@@ -274,7 +273,16 @@ const Index = () => {
             {/* Image Gallery */}
             <div>
               <h3 className="text-lg font-bold mb-4 text-center">Algunas de mis automatizaciones</h3>
-              <ThreeDPhotoCarousel images={galleryImages} />
+              <div className="grid grid-cols-2 gap-4">
+                {galleryImages.map((src, index) => (
+                  <img
+                    key={index}
+                    src={src}
+                    alt={`Gallery image ${index + 1}`}
+                    className="rounded-lg object-cover w-full h-full"
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </section>
