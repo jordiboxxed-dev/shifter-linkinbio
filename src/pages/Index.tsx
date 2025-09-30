@@ -1,5 +1,7 @@
 "use client";
 
+// Minor change to trigger Vercel deployment
+
 import { useState, useEffect } from "react";
 import { CardContent } from "@/components/ui/card";
 import { 
