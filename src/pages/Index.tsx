@@ -101,7 +101,7 @@ const Index = () => {
       title: "🤝 Trabajemos Juntos",
       description: "Consulta por servicios personalizados",
       icon: Handshake,
-      href: "https://www.instagram.com/jordigpt",
+      href: "https://www.instagram.com/jordigpt/",
       category: "support"
     }
   ];
