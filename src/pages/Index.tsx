@@ -1,9 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { CardContent } from "@/components/ui/card";
 import { 
   Instagram, 
   Linkedin, 
@@ -12,7 +10,6 @@ import {
   Users,
   Video,
   ShoppingCart,
-  ExternalLink,
   Music2,
   Handshake,
   Bot,
@@ -20,11 +17,10 @@ import {
   Music,
   Calculator
 } from "lucide-react";
-import { toast } from "sonner";
+import { ThreeDPhotoCarousel } from "@/components/ui/3d-carousel";
 
 const Index = () => {
   const [timeOfDay, setTimeOfDay] = useState("");
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   // Set greeting based on time of day
   useEffect(() => {
@@ -276,21 +272,7 @@ const Index = () => {
             {/* Image Gallery */}
             <div>
               <h3 className="text-lg font-bold mb-4 text-center">Algunas de mis automatizaciones</h3>
-              <div className="grid grid-cols-2 gap-4">
-                {galleryImages.map((src, index) => (
-                  <div 
-                    key={index} 
-                    className="glass-card rounded-xl overflow-hidden aspect-square hover:scale-105 transition-transform duration-300 cursor-pointer"
-                    onClick={() => setSelectedImage(src)}
-                  >
-                    <img 
-                      src={src} 
-                      alt={`Galería item ${index + 1}`}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                ))}
-              </div>
+              <ThreeDPhotoCarousel images={galleryImages} />
             </div>
           </div>
         </section>
@@ -347,19 +329,6 @@ const Index = () => {
           </div>
         </section>
       </div>
-
-      {/* Image Lightbox Dialog */}
-      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
-        <DialogContent className="p-0 border-0 max-w-4xl bg-transparent shadow-none">
-          {selectedImage && (
-            <img 
-              src={selectedImage} 
-              alt="Imagen ampliada" 
-              className="w-full h-auto rounded-lg object-contain"
-            />
-          )}
-        </DialogContent>
-      </Dialog>
     </div>
   );
 };
